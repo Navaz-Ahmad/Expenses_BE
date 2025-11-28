@@ -93,7 +93,7 @@ router.post("/upload", upload.single("file"), async (req, res) => {
 // ============================================================
 router.post(
   "/registerCustomer",
-  upload.single("screenshot"),
+  upload.single("paymentScreenshot"),
   async (req, res) => {
     try {
       const customer = new Payment({
